@@ -3,7 +3,7 @@
 ## Description
 
 Review Buddy is a command-line Python application that, given a GitHub username, fetches all code and QA reviews 
-performed by the specified user between now and a specified date.
+performed by the specified user between now and a specified date and outputs the info as a CSV.
 
 ## Installation
 
@@ -29,5 +29,5 @@ a month's worth of events, but this can be useful for filtering out older review
 
 ```bash
 $ python review_buddy.py -u samueljackson-wf
-$ python review_buddy.py -u samueljackson-wf --starting-at="Jan 1 2025"
+$ python review_buddy.py -u samueljackson-wf --starting-at="Jan 1 2025" > output.csv
 ```
